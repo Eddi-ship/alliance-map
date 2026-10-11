@@ -1,0 +1,24 @@
+{
+ "_note": "Regions that are locked in the game. Remove a name from this list when it unlocks, then run the update again.",
+ "locked": [
+  "Caledonia",
+  "Saguntum",
+  "Pictavium",
+  "Numantia",
+  "Girba",
+  "Rusicadae",
+  "Mediolanum",
+  "Emerita Augusta",
+  "Hibernia",
+  "Cimbri",
+  "Tarraco",
+  "Emporiae",
+  "Burdigala",
+  "Teutones",
+  "Hispalis",
+  "Castra Regina",
+  "Olisipo",
+  "Tolosa",
+  "Vandali"
+ ]
+}
