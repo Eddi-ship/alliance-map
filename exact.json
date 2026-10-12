@@ -1,0 +1,703 @@
+{
+"date": "2026-10-12T20:42:00Z",
+"valid_until": "2026-10-13T03:30:00Z",
+"source": "game",
+"regions": {
+"Apollonia Pontica": {
+"st": "ctrl",
+"al": "Улт",
+"pop": 3686,
+"pct": 91.71,
+"full": "The trainers slight talent IX",
+"short": "Small Trainer"
+},
+"Sparta": {
+"st": "ctrl",
+"al": "CH",
+"pop": 7345,
+"pct": 87.68,
+"full": "Increased victory point production",
+"short": "Victory Points"
+},
+"Carthago Nova": {
+"st": "ctrl",
+"al": "STMA",
+"pop": 17277,
+"pct": 78.75,
+"full": "The great titan boots III",
+"short": "Large Boots"
+},
+"Vandali": {
+"st": "ctrl",
+"al": "WILD",
+"pop": 4574,
+"pct": 77.38,
+"full": "The slight titan boots VIII",
+"short": "Small Boots"
+},
+"Athens": {
+"st": "ctrl",
+"al": "CH",
+"pop": 6295,
+"pct": 75.62,
+"full": "Great storage masterplan III",
+"short": "Large Storage"
+},
+"Ulpiana": {
+"st": "ctrl",
+"al": "+CH+",
+"pop": 3851,
+"pct": 74.89,
+"full": "Slight storage masterplan X",
+"short": "Small Storage"
+},
+"Durnonovaria": {
+"st": "ctrl",
+"al": "KiF",
+"pop": 7405,
+"pct": 72.64,
+"full": "The trainers slight talent X",
+"short": "Small Trainer"
+},
+"Apollonia": {
+"st": "ctrl",
+"al": "+CH+",
+"pop": 11979,
+"pct": 70.39,
+"full": "The eagles slight eyes IX",
+"short": "Small Eyes"
+},
+"Tyras": {
+"st": "ctrl",
+"al": "LE",
+"pop": 4001,
+"pct": 67.11,
+"full": "The unique titan boots",
+"short": "Unique Boots"
+},
+"Segovia": {
+"st": "ctrl",
+"al": "STMA",
+"pop": 8726,
+"pct": 66.42,
+"full": "The slight titan boots VII",
+"short": "Small Boots"
+},
+"Caledonia": {
+"st": "ctrl",
+"al": "KiF",
+"pop": 3116,
+"pct": 66.77,
+"full": "The architects' great secret III",
+"short": "Large Architect"
+},
+"Eburacum": {
+"st": "ctrl",
+"al": "KiF",
+"pop": 10584,
+"pct": 66.57,
+"full": "The slight titan boots V",
+"short": "Small Boots"
+},
+"Iconium": {
+"st": "ctrl",
+"al": "LoV",
+"pop": 16880,
+"pct": 66.64,
+"full": "Slight diet control IX",
+"short": "Small Diet"
+},
+"Caesarea": {
+"st": "ctrl",
+"al": "STMA",
+"pop": 13277,
+"pct": 63.71,
+"full": "Slight storage masterplan VIII",
+"short": "Small Storage"
+},
+"Treverorum": {
+"st": "ctrl",
+"al": "-CH-",
+"pop": 8840,
+"pct": 61.04,
+"full": "The architects' slight secret VIII",
+"short": "Small Architect"
+},
+"Delphi": {
+"st": "ctrl",
+"al": "CH",
+"pop": 14654,
+"pct": 61.31,
+"full": "The trainers great talent III",
+"short": "Large Trainer"
+},
+"Corduba": {
+"st": "ctrl",
+"al": "WILD",
+"pop": 9333,
+"pct": 60.83,
+"full": "The trainers slight talent VII",
+"short": "Small Trainer"
+},
+"Bagacum": {
+"st": "ctrl",
+"al": "-CH-",
+"pop": 21960,
+"pct": 60.01,
+"full": "The eagles great eyes II",
+"short": "Large Eyes"
+},
+"Corinium": {
+"st": "ctrl",
+"al": "KiF",
+"pop": 10367,
+"pct": 55.5,
+"full": "Slight storage masterplan IX",
+"short": "Small Storage"
+},
+"Cherusci": {
+"st": "ctrl",
+"al": "BBC",
+"pop": 23760,
+"pct": 54.64,
+"full": "Increased victory point production",
+"short": "Victory Points"
+},
+"Samothrace": {
+"st": "ctrl",
+"al": "Улт",
+"pop": 8614,
+"pct": 53.95,
+"full": "Rivals great confusion II",
+"short": "Large Confusion"
+},
+"Volubilis": {
+"st": "ctrl",
+"al": "STMA",
+"pop": 3473,
+"pct": 52.5,
+"full": "The eagles slight eyes VII",
+"short": "Small Eyes"
+},
+"Lutetia": {
+"st": "ctrl",
+"al": "ADULT",
+"pop": 18871,
+"pct": 52.73,
+"full": "Slight diet control VI",
+"short": "Small Diet"
+},
+"Byzantinum": {
+"st": "part",
+"al": "KRT",
+"pop": 12754,
+"pct": 50.92,
+"full": "The architects' great secret I",
+"short": "Large Architect"
+},
+"Rusadir": {
+"st": "part",
+"al": "S0S",
+"pop": 7954,
+"pct": 43.64,
+"full": "Increased victory point production",
+"short": "Victory Points"
+},
+"Halicarnassos": {
+"st": "part",
+"al": "KRT",
+"pop": 8676,
+"pct": 43.02,
+"full": "The slight titan boots X",
+"short": "Small Boots"
+},
+"Londinium": {
+"st": "part",
+"al": "KiF",
+"pop": 7611,
+"pct": 42.2,
+"full": "Increased victory point production",
+"short": "Victory Points"
+},
+"Mogontiacum": {
+"st": "part",
+"al": "HERO",
+"pop": 6854,
+"pct": 40.72,
+"full": "The eagles slight eyes X",
+"short": "Small Eyes"
+},
+"Hyperborea": {
+"st": "part",
+"al": "LE",
+"pop": 3775,
+"pct": 39.99,
+"full": "Increased victory point production",
+"short": "Victory Points"
+},
+"Venedae": {
+"st": "part",
+"al": "LE",
+"pop": 35445,
+"pct": 39.86,
+"full": "Slight diet control VII",
+"short": "Small Diet"
+},
+"Philippopolis": {
+"st": "part",
+"al": "CH",
+"pop": 1892,
+"pct": 38.08,
+"full": "Increased victory point production",
+"short": "Victory Points"
+},
+"Argentorate": {
+"st": "part",
+"al": "STARK",
+"pop": 5788,
+"pct": 37.07,
+"full": "Slight storage masterplan VI",
+"short": "Small Storage"
+},
+"Sarmatia": {
+"st": "part",
+"al": "TC",
+"pop": 5563,
+"pct": 35.32,
+"full": "The eagles great eyes IV",
+"short": "Large Eyes"
+},
+"Augustodunum": {
+"st": "part",
+"al": "KiF",
+"pop": 2367,
+"pct": 32.69,
+"full": "The great titan boots IV",
+"short": "Large Boots"
+},
+"Saguntum": {
+"st": "lock",
+"al": "STMA",
+"pop": 2277,
+"pct": null,
+"full": "The architects' slight secret VI",
+"short": "Small Architect"
+},
+"Pictavium": {
+"st": "lock",
+"al": "-CH-",
+"pop": 1745,
+"pct": null,
+"full": "The eagles slight eyes V",
+"short": "Small Eyes"
+},
+"Numantia": {
+"st": "lock",
+"al": "STMA",
+"pop": 1711,
+"pct": null,
+"full": "Slight storage masterplan V",
+"short": "Small Storage"
+},
+"Narbo": {
+"st": "none",
+"al": "",
+"pop": null,
+"pct": null,
+"full": "Great storage masterplan IV",
+"short": "Large Storage"
+},
+"Mediolanum": {
+"st": "lock",
+"al": "KiF",
+"pop": 1485,
+"pct": null,
+"full": "Rivals slight confusion X",
+"short": "Small Confusion"
+},
+"Hibernia": {
+"st": "lock",
+"al": "KiF",
+"pop": 1361,
+"pct": null,
+"full": "The eagles unique eyes",
+"short": "Unique Eyes"
+},
+"Girba": {
+"st": "lock",
+"al": "S0S",
+"pop": 1346,
+"pct": null,
+"full": "Slight diet control VIII",
+"short": "Small Diet"
+},
+"Rusicadae": {
+"st": "lock",
+"al": "STMA",
+"pop": 1320,
+"pct": null,
+"full": "The architects unique secret",
+"short": "Unique Architect"
+},
+"Emerita Augusta": {
+"st": "lock",
+"al": "WILD",
+"pop": 959,
+"pct": null,
+"full": "Rivals unique confusion",
+"short": "Unique Confusion"
+},
+"Emporiae": {
+"st": "lock",
+"al": "STMA",
+"pop": 620,
+"pct": null,
+"full": "The architects' great secret IV",
+"short": "Large Architect"
+},
+"Cimbri": {
+"st": "lock",
+"al": "STMA",
+"pop": 561,
+"pct": null,
+"full": "Rivals slight confusion V",
+"short": "Small Confusion"
+},
+"Tarraco": {
+"st": "lock",
+"al": "WILD",
+"pop": 534,
+"pct": null,
+"full": "Rivals slight confusion IX",
+"short": "Small Confusion"
+},
+"Hispalis": {
+"st": "lock",
+"al": "S0S",
+"pop": 509,
+"pct": null,
+"full": "Rivals great confusion III",
+"short": "Large Confusion"
+},
+"Teutones": {
+"st": "lock",
+"al": "WILD",
+"pop": 503,
+"pct": null,
+"full": "Unique diet control",
+"short": "Unique Diet"
+},
+"Burdigala": {
+"st": "lock",
+"al": "XD",
+"pop": 442,
+"pct": null,
+"full": "The trainers great talent I",
+"short": "Large Trainer"
+},
+"Nemausus": {
+"st": "lock",
+"al": "KiF",
+"pop": 442,
+"pct": null,
+"full": "The trainers slight talent VI",
+"short": "Small Trainer"
+},
+"Massalia": {
+"st": "none",
+"al": "",
+"pop": null,
+"pct": null,
+"full": "Increased victory point production",
+"short": "Victory Points"
+},
+"Hippo Regius": {
+"st": "none",
+"al": "",
+"pop": null,
+"pct": null,
+"full": "The trainers great talent IV",
+"short": "Large Trainer"
+},
+"Alalie": {
+"st": "none",
+"al": "",
+"pop": null,
+"pct": null,
+"full": "The architects' slight secret V",
+"short": "Small Architect"
+},
+"Lepcis Magna": {
+"st": "none",
+"al": "",
+"pop": null,
+"pct": null,
+"full": "The trainers slight talent V",
+"short": "Small Trainer"
+},
+"Castra Regina": {
+"st": "lock",
+"al": "BBC",
+"pop": 354,
+"pct": null,
+"full": "Great diet control III",
+"short": "Large Diet"
+},
+"Tolosa": {
+"st": "lock",
+"al": "ADULT",
+"pop": 201,
+"pct": null,
+"full": "Slight diet control X",
+"short": "Small Diet"
+},
+"Olisipo": {
+"st": "lock",
+"al": "INUK",
+"pop": 182,
+"pct": null,
+"full": "Increased victory point production",
+"short": "Victory Points"
+},
+"Caralis": {
+"st": "none",
+"al": "",
+"pop": null,
+"pct": null,
+"full": "The eagles great eyes III",
+"short": "Large Eyes"
+},
+"Carthago": {
+"st": "none",
+"al": "",
+"pop": null,
+"pct": null,
+"full": "The slight titan boots VI",
+"short": "Small Boots"
+},
+"Pisae": {
+"st": "none",
+"al": "",
+"pop": null,
+"pct": null,
+"full": "The eagles slight eyes VIII",
+"short": "Small Eyes"
+},
+"Ravenna": {
+"st": "none",
+"al": "",
+"pop": null,
+"pct": null,
+"full": "The slight titan boots IX",
+"short": "Small Boots"
+},
+"Lilybaeum": {
+"st": "none",
+"al": "",
+"pop": null,
+"pct": null,
+"full": "Great diet control IV",
+"short": "Large Diet"
+},
+"Tarsus": {
+"st": "lock",
+"al": "LoV",
+"pop": 3012,
+"pct": null,
+"full": "Rivals slight confusion VII",
+"short": "Small Confusion"
+},
+"Aquileia": {
+"st": "lock",
+"al": "WILD",
+"pop": 2441,
+"pct": null,
+"full": "Rivals great confusion IV",
+"short": "Large Confusion"
+},
+"Salona": {
+"st": "none",
+"al": "",
+"pop": null,
+"pct": null,
+"full": "Increased victory point production",
+"short": "Victory Points"
+},
+"Bastarnae": {
+"st": "lock",
+"al": "CH",
+"pop": 2373,
+"pct": null,
+"full": "Increased victory point production",
+"short": "Victory Points"
+},
+"Scythia": {
+"st": "lock",
+"al": "LE",
+"pop": 2346,
+"pct": null,
+"full": "The architects' slight secret VII",
+"short": "Small Architect"
+},
+"Brandisium": {
+"st": "lock",
+"al": "CH",
+"pop": 2098,
+"pct": null,
+"full": "Great storage masterplan I",
+"short": "Large Storage"
+},
+"Burgundi": {
+"st": "lock",
+"al": "LE",
+"pop": 1884,
+"pct": null,
+"full": "The architects' slight secret X",
+"short": "Small Architect"
+},
+"Segestica": {
+"st": "none",
+"al": "",
+"pop": null,
+"pct": null,
+"full": "Slight diet control V",
+"short": "Small Diet"
+},
+"Cyrene": {
+"st": "lock",
+"al": "KRT",
+"pop": 1652,
+"pct": null,
+"full": "The great titan boots II",
+"short": "Large Boots"
+},
+"Ancyra": {
+"st": "lock",
+"al": "KRT",
+"pop": 1184,
+"pct": null,
+"full": "The eagles slight eyes VI",
+"short": "Small Eyes"
+},
+"Alexandria": {
+"st": "lock",
+"al": "HNS",
+"pop": 997,
+"pct": null,
+"full": "Slight storage masterplan VII",
+"short": "Small Storage"
+},
+"Paraitonion": {
+"st": "lock",
+"al": "KRT",
+"pop": 948,
+"pct": null,
+"full": "The trainers unique talent",
+"short": "Unique Trainer"
+},
+"Marcomanni": {
+"st": "lock",
+"al": "HERO",
+"pop": 806,
+"pct": null,
+"full": "The trainers slight talent VIII",
+"short": "Small Trainer"
+},
+"Mursa": {
+"st": "lock",
+"al": "+CH+",
+"pop": 567,
+"pct": null,
+"full": "The trainers great talent II",
+"short": "Large Trainer"
+},
+"Theodosia": {
+"st": "lock",
+"al": "WAR",
+"pop": 419,
+"pct": null,
+"full": "Rivals slight confusion VIII",
+"short": "Small Confusion"
+},
+"Berzobis": {
+"st": "lock",
+"al": "CH",
+"pop": 390,
+"pct": null,
+"full": "The great titan boots I",
+"short": "Large Boots"
+},
+"Gherla": {
+"st": "lock",
+"al": "WILD",
+"pop": 386,
+"pct": null,
+"full": "Great diet control I",
+"short": "Large Diet"
+},
+"Syracusae": {
+"st": "lock",
+"al": "空",
+"pop": 205,
+"pct": null,
+"full": "The architects' great secret II",
+"short": "Large Architect"
+},
+"Thebes": {
+"st": "lock",
+"al": "LE",
+"pop": 166,
+"pct": null,
+"full": "Great storage masterplan II",
+"short": "Large Storage"
+},
+"Ammon": {
+"st": "lock",
+"al": "TH™",
+"pop": 113,
+"pct": null,
+"full": "Rivals great confusion I",
+"short": "Large Confusion"
+},
+"Memphis": {
+"st": "none",
+"al": "",
+"pop": null,
+"pct": null,
+"full": "The architects' slight secret IX",
+"short": "Small Architect"
+},
+"Athribis": {
+"st": "lock",
+"al": "+CH+",
+"pop": 367,
+"pct": null,
+"full": "Great diet control II",
+"short": "Large Diet"
+},
+"Epidaurum": {
+"st": "lock",
+"al": "+CH+",
+"pop": 288,
+"pct": null,
+"full": "Rivals slight confusion VI",
+"short": "Small Confusion"
+},
+"Petra": {
+"st": "lock",
+"al": "KiF",
+"pop": 180,
+"pct": null,
+"full": "The eagles great eyes I",
+"short": "Large Eyes"
+},
+"Jerusalem": {
+"st": "lock",
+"al": "LoV",
+"pop": 179,
+"pct": null,
+"full": "Increased victory point production",
+"short": "Victory Points"
+}
+}
+}

@@ -1,0 +1,43 @@
+{
+ "_note": "start_unlocked: regions that were open in the game on 12 Oct 2026. force_locked: regions the game shows as locked even though map.sql shows 4000+ population. force_unlocked: regions the game shows as open that the program still thinks are locked. Edit these lists if the map disagrees with the game.",
+ "start_unlocked": [
+  "Apollonia",
+  "Apollonia Pontica",
+  "Argentorate",
+  "Athens",
+  "Augustodunum",
+  "Bagacum",
+  "Byzantinum",
+  "Caesarea",
+  "Caledonia",
+  "Carthago Nova",
+  "Cherusci",
+  "Corduba",
+  "Corinium",
+  "Delphi",
+  "Durnonovaria",
+  "Eburacum",
+  "Halicarnassos",
+  "Hyperborea",
+  "Iconium",
+  "Londinium",
+  "Lutetia",
+  "Mogontiacum",
+  "Philippopolis",
+  "Rusadir",
+  "Samothrace",
+  "Sarmatia",
+  "Segovia",
+  "Sparta",
+  "Treverorum",
+  "Tyras",
+  "Ulpiana",
+  "Vandali",
+  "Venedae",
+  "Volubilis"
+ ],
+ "force_locked": [
+  "Pictavium"
+ ],
+ "force_unlocked": []
+}

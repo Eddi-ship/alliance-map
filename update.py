@@ -9,6 +9,7 @@ import re, json, gzip, sys, os, urllib.request, datetime, collections
 WORLD = "https://rog.x3.international.travian.com"   # change this if you move to another world
 THRESHOLD = 51.0                                     # % of alliance-member population needed to count as controlled
 RENAME = {"Brundisium": "Brandisium"}                # region names that differ between map.sql and the map
+UNLOCK_POP = 4000                                    # a region unlocks for good once its population reaches this
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 # ---- colours: a fixed slot per alliance, remembered in colors.json so colours never change between days
@@ -47,7 +48,10 @@ def main():
     rows = parse(load_sql())
     if len(rows) < 100:
         sys.exit(f"map.sql looks wrong ({len(rows)} rows), leaving data.json untouched")
-    locked = set(json.load(open(os.path.join(HERE, "locked.json")))["locked"])
+    ov = json.load(open(os.path.join(HERE, "overrides.json")))
+    prev_path = os.path.join(HERE, "data.json")
+    prev = json.load(open(prev_path)) if os.path.exists(prev_path) else {}
+    unlocked = set(prev.get("unlocked") or ov["start_unlocked"])   # unlocked regions are never locked again
     pop = collections.defaultdict(int)
     ally = collections.defaultdict(lambda: collections.Counter())
     for v in rows:
@@ -66,11 +70,25 @@ def main():
             pct = round(100 * lead_pop / members, 2)
             entry.update(al=lead, pct=pct, top=[[t, round(100 * p / members, 1)] for t, p in ranked[:3]],
                          st="ctrl" if pct >= THRESHOLD else "part")
-        if r in locked:
-            entry["st"] = "lock"
         regions[r] = entry
-    for r in locked:                                   # locked regions with no villages yet still show as locked
-        regions.setdefault(r, {"st": "lock", "al": "", "pct": None, "pop": 0, "members": 0, "top": []})
+    force_locked, force_unlocked = set(ov["force_locked"]), set(ov["force_unlocked"])
+    exact = None
+    xp = os.path.join(HERE, "exact.json")
+    if os.path.exists(xp):
+        ex = json.load(open(xp))
+        if datetime.datetime.now(datetime.timezone.utc) < datetime.datetime.fromisoformat(ex["valid_until"].replace("Z", "+00:00")):
+            exact = ex
+    unlocked |= {r for r, p in pop.items() if p >= UNLOCK_POP}
+    unlocked = (unlocked | force_unlocked) - force_locked
+    for r, e in regions.items():
+        if e["pop"] > 0 and r not in unlocked:
+            e["st"] = "lock"
+    if exact:                                          # figures copied from the game win over the estimate until valid_until
+        for r, e in exact["regions"].items():
+            old = regions.get(r, {})
+            regions[r] = {"st": e["st"], "al": e["al"], "pct": e["pct"], "pop": e["pop"],
+                          "members": 0, "top": []}
+        unlocked = {r for r, e in exact["regions"].items() if e["st"] in ("ctrl", "part")}
 
     # ---- colours
     cpath = os.path.join(HERE, "colors.json")
@@ -88,8 +106,9 @@ def main():
     alliances = {}
     for i, tag in enumerate(sorted(leaders)):
         alliances[tag] = dict(colors[tag], id=f"a{i}")
-    out = {"updated": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-           "world": WORLD, "threshold": THRESHOLD, "villages": len(rows), "regions": regions, "alliances": alliances}
+    now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    out = {"updated": exact["date"] if exact else now, "source": "game" if exact else "estimate",
+           "world": WORLD, "threshold": THRESHOLD, "unlock_pop": UNLOCK_POP, "unlocked": sorted(unlocked), "villages": len(rows), "regions": regions, "alliances": alliances}
     json.dump(out, open(os.path.join(HERE, "data.json"), "w"), ensure_ascii=False, separators=(",", ":"))
     print(f"ok: {len(rows)} villages, {len(regions)} regions, {len(alliances)} alliances")
 
