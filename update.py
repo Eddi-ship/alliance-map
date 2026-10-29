@@ -7,7 +7,7 @@ Usage:  python update.py              (downloads from WORLD)
 import re, json, gzip, sys, os, urllib.request, datetime, collections
 
 WORLD = "https://rog.x3.international.travian.com"   # change this if you move to another world
-THRESHOLD = 51.0                                     # % of alliance-member population needed to count as controlled
+THRESHOLD = 50.0                                     # more than this % of the top-5 alliances' population = controlled (as in the game)
 RENAME = {"Brundisium": "Brandisium"}                # region names that differ between map.sql and the map
 UNLOCK_POP = 4000                                    # a region unlocks for good once its population reaches this
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -62,14 +62,14 @@ def main():
     regions = {}
     for r in pop:
         c = ally[r]
-        members = sum(c.values())
+        ranked = c.most_common()
+        members = sum(p for _, p in ranked[:5])        # the game only counts the 5 biggest alliances in a region
         entry = {"st": "none", "al": "", "pct": None, "pop": pop[r], "members": members, "top": []}
         if members:
-            ranked = c.most_common()
             lead, lead_pop = ranked[0]
             pct = round(100 * lead_pop / members, 2)
             entry.update(al=lead, pct=pct, top=[[t, round(100 * p / members, 1)] for t, p in ranked[:3]],
-                         st="ctrl" if pct >= THRESHOLD else "part")
+                         st="ctrl" if pct > THRESHOLD else "part")
         regions[r] = entry
     force_locked, force_unlocked = set(ov["force_locked"]), set(ov["force_unlocked"])
     exact = None
@@ -78,7 +78,7 @@ def main():
         ex = json.load(open(xp))
         if datetime.datetime.now(datetime.timezone.utc) < datetime.datetime.fromisoformat(ex["valid_until"].replace("Z", "+00:00")):
             exact = ex
-    unlocked |= {r for r, p in pop.items() if p >= UNLOCK_POP}
+    unlocked |= {r for r, e in regions.items() if e["members"] >= UNLOCK_POP}   # top-5 alliances together
     unlocked = (unlocked | force_unlocked) - force_locked
     for r, e in regions.items():
         if e["pop"] > 0 and r not in unlocked:
