@@ -18,10 +18,15 @@ jobs:
           python-version: "3.12"
       - name: Download map.sql and rebuild data.json
         run: python update.py
+      - name: Take a picture of the map for Discord (map.png)
+        run: |
+          pip install playwright==1.47.0
+          python -m playwright install --with-deps chromium
+          python screenshot.py
       - name: Save the new data
         run: |
           git config user.name "github-actions"
           git config user.email "actions@users.noreply.github.com"
-          git add data.json colors.json
+          git add data.json colors.json map.png
           git diff --cached --quiet || git commit -m "Daily data update"
           git push
